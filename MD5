@@ -1,4 +1,4 @@
-e35d3757e0e9d000075b2617fddae6b8 *DESCRIPTION
+d9e3f8e3823db1ebf8e7f5d6717a0b6a *DESCRIPTION
 c11a83e41316cb601150a982226eb3f9 *NAMESPACE
 1233d49c1870b802f2f6000dafe35bd1 *R/Rcan-internal.R
 cb8e5070f90a19413f5bc2e831a5d49d *R/csu_ageSpecific.r
@@ -8,15 +8,15 @@ ac990bbc507753dca0740166dc284a5c *R/csu_ageSpecific_top.R
 a3b01ce726c41b8ee92e88fffb56c1b2 *R/csu_time_trend.R
 77748b59312a595c46dbefced42df8b7 *R/csu_trendCohortPeriod.R
 e2d757e8c2865d62c0c2a7e225929f76 *R/csu_trend_legend.R
-6c2a111b37ea6091655873fec9dbd150 *R/helper.r
+a035af5adda1053cd08c50f4081fac57 *R/helper.r
 f9c66a89962aad13f0a4841086db8e8d *R/zzz.R
-9b72167aa2890520f178e74325beeed1 *build/partial.rdb
+bbe95cdb3b6c8af906423c1640402a3b *build/partial.rdb
 3c2404b55f264c054496c3a41f837ee3 *data/csu_CI5X_data.rda
 35c4bb2c893239223eeb9aa68300774e *data/csu_ci5x_mean.rda
 fc7810394222f57a8b2d0b6ab0d1c919 *data/csu_registry_data_1.rda
 33a5a84922f305eb09d7b9ee8dcfcae1 *data/csu_registry_data_2.rda
 9c6f5f34cff0c404a7daea174edb7144 *data/datalist
-1e0c8b718c0f3acc4dccd07b8e9d6f2b *inst/testdata/csu_asr_test1.rds
+3e777a13e6a1d46e3c3c8c24f0049498 *inst/testdata/csu_asr_test1.rds
 01df5718d4577681356d43f4afac62a3 *inst/testdata/csu_eapc_test1.rds
 657385a509bfd30aef6dcbd28168b4f2 *inst/testdata/csu_graph_ageSpecific_test1.rds
 de7a7df8f86186bdb0f714c4d9fce5a9 *inst/testdata/csu_trend_test1.rds
@@ -34,4 +34,4 @@ fa014d2283f4d84c11e9c87083b10daf *man/csu_registry_data_2.Rd
 6876ebb49f02a6191bb0ddd0db9af8c1 *man/csu_trendCohortPeriod.Rd
 c8235261aa57ac3ab2c6cda9aa02d6cd *man/csu_trend_legend.Rd
 2d4b377cedd93d856b8a617437bddcf6 *tests/testthat.R
-c37c08d6ee34950b512f60fa264e0fed *tests/testthat/test-Rcan.R
+b0bd8944d3cb2428cacaa6b67416c4ee *tests/testthat/test-Rcan.R
