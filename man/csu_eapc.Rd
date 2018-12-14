@@ -10,7 +10,8 @@ csu_eapc(df_data,
 	var_rate="asr",
 	var_year="year",
 	group_by=NULL,
-	var_eapc = "eapc")
+	var_eapc = "eapc",
+	CI_level = 0.95)
 }
 
 \arguments{
@@ -29,6 +30,9 @@ csu_eapc(df_data,
   \item{var_eapc}{
 		Name of the new variable for the EAPC.\cr
 		The variable for the CI will be name based on \code{var_eapc} + "_" +  up/Low.
+}
+  \item{CI_level}{
+		Confidence interval level. Default is 0.95.
 }
 
 }
