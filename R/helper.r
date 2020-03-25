@@ -431,12 +431,18 @@ core.csu_asr <- function(df_data, var_age, var_cases, var_py, group_by=NULL,
       # create world population DF for different nb of age group
       SEGI_pop <- c(12000,10000,9000,9000,8000,8000,6000,6000,6000,6000,5000,4000,4000,3000,2000,1000,500,500)
       EURO_pop <- c(8000,7000,7000,7000,7000,7000,7000,7000,7000,7000,7000,6000,5000,4000,3000,2000,1000,1000)
-      
-      if (pop_base == "EURO") {
-        pop <- EURO_pop
-      } else {
-        pop <- SEGI_pop
-      }
+      EURO2_pop <- c(5000,5500,5500,5500,6000,6000,6500,7000,7000,7000,7000,6500,6000,5500,5000,4000,2500,2500)
+      WHO_pop <- c(8860,8690,8600,8470,8220,7930,7610,7150,6590,6040,5370,4550,3720,2960,2210,1520,910,630)
+    
+    if (pop_base == "EURO") {
+      pop <- EURO_pop
+    } else if (pop_base == "EURO2") {
+      pop <- EURO2_pop
+    } else if (pop_base == "WHO") {
+      pop <- WHO_pop
+    } else {
+      pop <- SEGI_pop
+    }
       
       # calculated total pop for age selected 
       total_pop <- sum(pop[first_age:last_age])
@@ -779,7 +785,7 @@ core.csu_eapc <- function(df_data,
            var_year="year",
            group_by= NULL,
            var_eapc="eapc", 
-					 CI_level = 0.95)
+           CI_level = 0.95)
 {
     
     #create fake group to have group_by optional 
@@ -858,9 +864,9 @@ core.csu_ageSpecific <-function(df_data,
            log_point=TRUE,
            plot_subtitle=NULL,
            plot_caption=NULL,
-					 xtitle = "Age at diagnosis",
-					 ytitle = "Age-specific incidence rate per",
-					 label_group_by = waiver())
+           xtitle = "Age at diagnosis",
+           ytitle = "Age-specific incidence rate per",
+           label_group_by = waiver())
 
 {
     
@@ -1123,21 +1129,21 @@ core.csu_ageSpecific <-function(df_data,
                                    size = linesize, linetype = "solid")
       )+
       th_legend
-		
-			
+    
+      
     
     if (!is.null(color_trend)) {
       
       csu_plot <- csu_plot +
         scale_colour_manual(name=legend$title,
-														labels = label_group_by,
+                            labels = label_group_by,
                             values= color_trend,
                             drop = FALSE)
       
       if (logscale) {
         csu_plot <- csu_plot +
           scale_fill_manual(labels = label_group_by,
-														values= color_trend,
+                            values= color_trend,
                             drop = FALSE)
       }
       
@@ -1195,9 +1201,9 @@ core.csu_ageSpecific_top <- function(df_data,
                                      nb_top = 5,
                                      plot_title=NULL,
                                      plot_subtitle=NULL,
-																		 label_group_by=NULL,
-																		 xtitle = "Age at diagnosis",
-																		 ytitle = "Age-specific incidence rate per",
+                                     label_group_by=NULL,
+                                     xtitle = "Age at diagnosis",
+                                     ytitle = "Age-specific incidence rate per",
                                      var_color=NULL,
                                      plot_caption=NULL,
                                      var_age_label_list = NULL,
@@ -1230,14 +1236,14 @@ core.csu_ageSpecific_top <- function(df_data,
   df_data$CSU_dum_by <- as.factor(df_data[[group_by]])
   for (i in levels( df_data$CSU_dum_by)) {
     
-		if (!is.null(label_group_by)) {
-		
-				label_group <- label_group_by[j]
-		}
-		else {
-			label_group <- i
-		}
-		
+    if (!is.null(label_group_by)) {
+    
+        label_group <- label_group_by[j]
+    }
+    else {
+      label_group <- i
+    }
+    
     if (caption_bypass) {
       if (j == 1) {
         plot_caption <- ""
@@ -1291,8 +1297,8 @@ core.csu_ageSpecific_top <- function(df_data,
       logscale = logscale,
       log_point=FALSE,
       age_label_list = age_label_list,
-			xtitle = xtitle,
-			ytitle = ytitle
+      xtitle = xtitle,
+      ytitle = ytitle
       )
     
     dt_temp <- temp$dt_data
@@ -1345,7 +1351,7 @@ core.csu_time_trend <- function (
   legend = csu_trend_legend(),
   color_trend = NULL,
   ytitle = "Age standardized rate per 100000",
-	xtitle = "Year",
+  xtitle = "Year",
   plot_title = "test",
   linesize = 0.5,
   plot_subtitle = NULL,
