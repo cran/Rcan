@@ -1,4 +1,4 @@
-891310185675edf90d26e0c5bd142fe6 *DESCRIPTION
+1908a0042fd7f4e96e02d5b428a81b33 *DESCRIPTION
 3dc37936240ca498908634ae95833529 *NAMESPACE
 38a2adb3e6682cf35c3cb1bce67fd979 *R/csu_ageSpecific.r
 bb667c86445070dd7918c8d4b587a52c *R/csu_ageSpecific_top.R
@@ -9,11 +9,11 @@ beaadf4d76a0442253bab732e2d6133d *R/csu_asr.R
 db71ceb94db69f3b911c5ae1232a3df1 *R/csu_group_cases.R
 86f20d7c673b5ad1a86578873d4219ef *R/csu_merge_cases_pop.R
 bb1c9e06e99c2c853eed6254a5049183 *R/csu_time_trend.R
-006c096c2ca2506cda38cb204635923e *R/csu_trendCohortPeriod.R
+aeb0eaed8e3ffd36cf52ff4cf7a6f4cd *R/csu_trendCohortPeriod.R
 e2d757e8c2865d62c0c2a7e225929f76 *R/csu_trend_legend.R
-22d7b40b77d3639abf1680d310628b9b *R/helper.r
+8892429174676e2318399864422653a4 *R/helper.r
 57f7f91009182ae1d6e01eb160f33534 *R/zzz.R
-bbd55d4f4039c262351ee59c751421f9 *build/partial.rdb
+6f50848ad88805be7518c4cd61a2e70e *build/partial.rdb
 49112e9c03ca0e80eb2c4440b315f6cb *data/ICD_group_CI5.rda
 d8a2fa1e97809795d0125c68f45aeda9 *data/ICD_group_GLOBOCAN.rda
 571c2ac92bb47e5048b5e8463e98fe17 *data/csu_CI5XI_data.rda
