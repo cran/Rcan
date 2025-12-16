@@ -1,4 +1,4 @@
-475d27efdd3376b9d672fdffaa5df5df *DESCRIPTION
+6770b730c0b0785ed590ff4505f8f75c *DESCRIPTION
 842625083cddd49d6e43058d72e87292 *NAMESPACE
 e7cc22c2b2f26407c96cc0b27d4b91cd *R/csu_ageSpecific.r
 bb667c86445070dd7918c8d4b587a52c *R/csu_ageSpecific_top.R
@@ -9,11 +9,11 @@ beaadf4d76a0442253bab732e2d6133d *R/csu_asr.R
 db71ceb94db69f3b911c5ae1232a3df1 *R/csu_group_cases.R
 86f20d7c673b5ad1a86578873d4219ef *R/csu_merge_cases_pop.R
 bb1c9e06e99c2c853eed6254a5049183 *R/csu_time_trend.R
-aeb0eaed8e3ffd36cf52ff4cf7a6f4cd *R/csu_trendCohortPeriod.R
+bbfbb061773648a4e7d851a0467a0a7a *R/csu_trendCohortPeriod.R
 e2d757e8c2865d62c0c2a7e225929f76 *R/csu_trend_legend.R
-b12e7065ee0ac8aa7159e697a3be8b8c *R/helper.r
+65e33f6479a13ff9cdc11663f2970f36 *R/helper.r
 d97cffc90b39125549182fc21683540b *R/zzz.R
-ca9e5539c5e65acb8b18acdb057a0d99 *build/partial.rdb
+3f53c4c78965c999d0868ab81e484d9a *build/partial.rdb
 49112e9c03ca0e80eb2c4440b315f6cb *data/ICD_group_CI5.rda
 d8a2fa1e97809795d0125c68f45aeda9 *data/ICD_group_GLOBOCAN.rda
 c82b9757de6a7c98a9c1fc17a920d589 *data/csu_CI5XII_data.rda
@@ -40,7 +40,7 @@ bb2641deeb6e8040adaabbac5457be44 *man/ICD_group_CI5.Rd
 93f771821973dea9cb235e03bba64367 *man/csu_bar_top.Rd
 32485c54023a2fa442f0a0e38d03fee2 *man/csu_ci5_mean.Rd
 51fca2325e5c2bb9ef1ecdcab16c6cd0 *man/csu_cumrisk.Rd
-e5a8af20c083f41b5a20b46f7cf03a47 *man/csu_eapc.Rd
+dd9ed378cac0786f42387b25480594f1 *man/csu_eapc.Rd
 8d052b7fc02cffb81fc39e0a0ac7bc54 *man/csu_group_cases.Rd
 f9a9315efba73bb08419e1390154fa38 *man/csu_merge_cases_pop.Rd
 2d4364e1253c124df3a57a0eef17db8f *man/csu_registry_data_1.Rd
